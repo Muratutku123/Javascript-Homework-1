@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, verify;
+
+  x = document.getElementById("numb").value;
+
+  if (isNaN(x) || x < 1 || x > 150) {
+    verify = "Not allowed";
+  } else {
+    verify = "Valid";
+  }
+  document.getElementById("demo").innerHTML = verify;
+}
+</script>
+
+<h3>Form Validation Exercise <strong style="color: chartreuse;">&#10004; Compelete Exercise 5</strong></h3>
+
+<p><strong style="color: chartreuse;">&#10004; Compeleted</strong> 1) Based on the example above, declare the variables "x" and "verify" at the beginning of the function.</p>
+<p><strong style="color: chartreuse;">&#10004; Compeleted</strong> 2) Set the valid range of input numbers between 1 and 150.</p>
+<p><strong style="color: chartreuse;">&#10004; Compeleted</strong> 3) If the input is not a number, or not within the range between 1 and 150, give the variable "verify" the string value "Not allowed". If it is within the range, give the variable "verify" the string value "Valid".</p>
+
+</body>
+</html> 
